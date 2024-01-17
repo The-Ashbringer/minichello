@@ -14,6 +14,7 @@
 # define MINISHELL_H
 
 # include "./libft/libft.h"
+# include "./lexer/lexer.h"
 # include <fcntl.h>
 # include <stdio.h>
 # include <readline/readline.h>
@@ -70,6 +71,7 @@ enum e_tokentype
 };
 void	addtoken(t_tokenlist *tlist, int type, char c);
 void	gettoken(char *str, t_tokenlist *tlist);
+
 
 // testers
 void	printtokens(t_tokenlist *tlist);

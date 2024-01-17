@@ -32,7 +32,7 @@ int	ft_pourcentage_d_i(int nb)
 
 int	ft_pourcentage_u(unsigned int nb)
 {
-	if (nb >= 0 && nb <= 9)
+	if (nb <= 9)
 		return (ft_printchar(nb + '0'));
 	else
 		return ((ft_pourcentage_u(nb / 10)) + (ft_printchar((nb % 10) + '0')));

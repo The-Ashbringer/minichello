@@ -11,13 +11,14 @@
 # **************************************************************************** #
 
 SRCS		=	main.c \
+				lexer/strtok_s.c \
 				lexer/lexer.c
 
 OBJS		= $(SRCS:.c=.o)
 
 CC			= gcc
 
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror -g
 
 LIBFT 		= libft/libft.a
 
